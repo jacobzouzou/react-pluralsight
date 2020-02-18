@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-server":" nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev-server": " nodemon --exec babel-node src/server/server.js --ignore dist/",
     "test": "jest",
-    "dev-bundle":"webpack -w -d"
+    "dev-bundle": "webpack -w -d"
   },
   "author": "",
   "license": "ISC",
