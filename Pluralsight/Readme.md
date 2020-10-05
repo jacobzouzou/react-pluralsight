@@ -145,7 +145,3 @@ https://jscomplete.com/closures
 app logic to change state
 UI logic to describe state
 
-******************************
-Error fixing
-******************************
-useState is not defined: React.useState();
