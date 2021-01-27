@@ -1,21 +1,21 @@
 // v1 STAR MATCH - Starting Template
 
 const DisplayStar = props => {
-  return (
-    utils.range(1, props.count).map(startId =>
-      <div
-        key={startId}
-        className="star"
-      />
-    )
-  );
-  // <>
-  //   {
-  //     utils.range(1, props.count).map(startId =>
-  //       <div key={startId} className="star"/>
-  //     )
-  //   }
-  // </>
+  // return (
+  //   utils.range(1, props.count).map(startId =>
+  //     <div
+  //       key={startId}
+  //       className="star"
+  //     />
+  //   )
+  // );
+  <>
+    {
+      utils.range(1, props.count).map(startId =>
+        <div key={startId} className="star"/>
+      )
+    }
+  </>
 };
 
 const PlayNumber = (props) => {

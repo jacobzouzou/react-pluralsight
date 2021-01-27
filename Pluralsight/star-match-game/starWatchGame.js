@@ -181,16 +181,6 @@ var Game = function Game(props) {
     )
   );
 };
-var StarMatch = function StarMatch() {
-  var _React$useState9 = React.useState(1),
-      _React$useState10 = _slicedToArray(_React$useState9, 2),
-      gameId = _React$useState10[0],
-      setGameId = _React$useState10[1];
-
-  return React.createElement(Game, { key: gameId, startNewGame: function startNewGame() {
-      return setGameId(gameId + 1);
-    } });
-};
 
 // Color Theme
 var colors = {
@@ -238,6 +228,17 @@ var utils = {
     }
     return sums[utils.random(0, sums.length - 1)];
   }
+};
+
+var StarMatch = function StarMatch() {
+  var _React$useState9 = React.useState(1),
+      _React$useState10 = _slicedToArray(_React$useState9, 2),
+      gameId = _React$useState10[0],
+      setGameId = _React$useState10[1];
+
+  return React.createElement(Game, { key: gameId, startNewGame: function startNewGame() {
+      return setGameId(gameId + 1);
+    } });
 };
 
 ReactDOM.render(React.createElement(StarMatch, null), mountNode);
