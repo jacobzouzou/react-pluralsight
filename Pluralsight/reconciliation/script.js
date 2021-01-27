@@ -1,33 +1,27 @@
-//this script not use JSX
-const jsTarget=document.getElementById("dateJs");
-const reactTarget= document.getElementById("dateReact"); 
+//this script user pure JS not use JSX
+const jsTarget = document.getElementById("jsDate");
+const reactTarget = document.getElementById("reactDate");
 
-const render=()=>{
-    //display js element
-    jsTarget.innerHTML=`
+const render = () => {
+  //display js element
+  jsTarget.innerHTML = `
     <div class="split">
-        JS Template
-        <input/>
+        JS Date Template
         <p>${new Date()}</p>
     </div>   
      `;
 
-     const reactDiv= React.createElement(
-        "div",
-        {className: "split" },
-        "React Template",
-        React.createElement("input"),
-        React.createElement(
-            "p",
-            null,
-            new Date().toString()
-        )
-    );
-    //Display react element
-    ReactDOM.render(reactDiv,reactTarget);
-}
+  const reactDiv = React.createElement(
+    "div",
+    { className: "split" },
+    "React Date Template",
+    React.createElement("p", null, new Date().toString())
+  );
+
+  //Display react element
+  ReactDOM.render(reactDiv, reactTarget);
+};
 
 setInterval(() => {
-    render();
+  render();
 }, 1000);
-

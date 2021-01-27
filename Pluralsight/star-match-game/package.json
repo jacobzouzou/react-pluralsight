@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel":"npx babel --watch src --out-dir . --presets react-app/prod",
-    "start":"start chrome index.html"
+    "babel": "npx babel --watch src --out-dir . --presets react-app/prod",
+    "start": "start chrome index.html"
   },
   "keywords": [],
   "author": "",
