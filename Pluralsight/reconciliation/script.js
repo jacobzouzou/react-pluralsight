@@ -6,7 +6,7 @@ const render = () => {
   //display js element
   jsTarget.innerHTML = `
     <div class="split">
-        JS Date Template
+        <h3>JS date Template</h3>
         <p>${new Date()}</p>
     </div>   
      `;
@@ -14,7 +14,7 @@ const render = () => {
   const reactDiv = React.createElement(
     "div",
     { className: "split" },
-    "React Date Template",
+    React.createElement("h3", null,"React date Template"),
     React.createElement("p", null, new Date().toString())
   );
 
