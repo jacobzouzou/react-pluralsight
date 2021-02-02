@@ -10,15 +10,15 @@ current item key : is usefull in immediat loop element
 
 React : javascript UI library  
 Babel: compile React JSX to "React API"  
-JSX: compile react syntaxe to "js html" 
+JSX: compile react syntaxe to "JS HTML" 
 
 ## Install dev http server
 
     1  npm install http-server --save-dev
     2  npm install concurrently --save-dev
 
-html: declarative for static data  
-react: declarative for dynamic data
+HTML: declarative for static data  
+React: declarative for dynamic data
 
 ##  JS learning sites: 
 https://jscomplete.com/react-cfp,  
@@ -27,24 +27,24 @@ https://jscomplete.com/playground or https://codepen.io/
 https://github.com/MicheleBertoli/css-in-js
 
 ## React component
+Receive inputs and returns UI (output) (can manage private state)  
+Reactive update  
+virtual view in memory: generate HTML using js (not HTML template language), tree reconciliation
 
-    receive inputs and return UI (output) (can manage private state)
-    reactive update
-    virtual view in memory: generate HTML using js (not HTML template language), tree reconciliation
+### Two types of react component
 
-### Two type of react components
-
- Fuction component
+ #### Function component
 
       const functionComponent = ()=>{
         return (
           <>
+            //return a fragment
              UI (html elements)
           </>
         ); 
       }
 
-  ### Class component 
+#### Class component 
 
     export class classCompo {
       //state
@@ -75,7 +75,7 @@ Example:
 
 ## prepare dev environnement
 
-    create project folder: 
+    Create project folder: 
       npm init -y
       npm install babel-cli@6 babel-preset-react-app@3
       create source folder: name 'src'
@@ -83,10 +83,18 @@ Example:
 
 ### Edit `package.json` scripts section
 
-    "start": "concurrently \"http-server -a localhost -p 5000\" "
+    {
+      ...
+      "start": "http-server -a localhost -p 5000"
+      ...
+    }
     or
-    "start": "npm run open",
-    "open": "concurrently \"http-server -a localhost -p 5000\""
+    {
+      ...
+      "start": "npm run open",
+      "open": "http-server -a localhost -p 5000"
+      ...
+    }
 
 ### Run app
 
