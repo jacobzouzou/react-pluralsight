@@ -15,7 +15,6 @@ JSX: compile react syntaxe to "JS HTML"
 ## Install dev http server
 
     1  npm install http-server --save-dev
-    2  npm install concurrently --save-dev
 
 HTML: declarative for static data  
 React: declarative for dynamic data
@@ -27,9 +26,9 @@ https://jscomplete.com/playground or https://codepen.io/
 https://github.com/MicheleBertoli/css-in-js
 
 ## React component
-Receive inputs and returns UI (output) (can manage private state)  
-Reactive update  
-virtual view in memory: generate HTML using js (not HTML template language), tree reconciliation
+Receive inputs and returns UI (output): can manage private state.  
+Reactive update.
+virtual view in memory: generate HTML using js (not HTML template language), tree reconciliation.
 
 ### Two types of react component
 
@@ -38,7 +37,7 @@ virtual view in memory: generate HTML using js (not HTML template language), tre
       const functionComponent = ()=>{
         return (
           <>
-            //return a fragment
+            //return a fragment or single root element
              UI (html elements)
           </>
         ); 
